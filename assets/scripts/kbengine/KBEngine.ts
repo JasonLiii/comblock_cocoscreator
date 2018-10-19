@@ -1091,16 +1091,16 @@ export class KBEngineApp {
 
             this.entities[eid] = entity;
 
+            entity.__init__();
+
+            if (this.args.isOnInitCallPropertysSetMethods)
+                entity.CallPropertysSetMethods();
+
             let entityStream = this.bufferedCreateEntityMessage[eid];
             if (entityStream !== undefined) {
                 this.Client_onUpdatePropertys(entityStream);
                 delete this.bufferedCreateEntityMessage[eid];
             }
-
-            entity.__init__();
-
-            if (this.args.isOnInitCallPropertysSetMethods)
-                entity.CallPropertysSetMethods();
         }
         else {
             let entityStream = this.bufferedCreateEntityMessage[eid];
