@@ -72,7 +72,7 @@ export class KBEngineApp {
     private serverScriptVersion = "";
     private serverProtocolMD5 = "";
     private serverEntityDefMD5 = "";
-    private clientVersion = "2.2.9";
+    private clientVersion = "2.3.0";
     private clientScriptVersion = "0.1.0";
 
     private lastTickTime: number = 0;
@@ -246,7 +246,7 @@ export class KBEngineApp {
         this.serverScriptVersion = "";
         this.serverProtocolMD5 = "";
         this.serverEntityDefMD5 = "";
-        this.clientVersion = "2.2.9";
+        this.clientVersion = "2.3.0";
         this.clientScriptVersion = "0.1.0";
 
         // player的相关信息
