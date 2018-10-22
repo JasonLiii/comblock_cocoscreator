@@ -5,6 +5,7 @@
 
 const {ccclass, property, disallowMultiple, menu} = cc._decorator
 
+
 export var g_CreateManager:CreateManager
 @ccclass
 @disallowMultiple
